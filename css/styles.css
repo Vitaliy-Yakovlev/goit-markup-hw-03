@@ -200,7 +200,7 @@ ul {
 }
 
 .footer-text {
-  color: var(--footer-link-color);
+  color: var(--primary-white-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
