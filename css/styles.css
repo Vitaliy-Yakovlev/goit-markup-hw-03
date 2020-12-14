@@ -33,12 +33,23 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 /* Шапка */
 
 /* главная навигация */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+
+  outline: 2px solid red;
+}
 
 .link {
   color: var(--primary-text-color);
@@ -86,19 +97,29 @@ ul {
 
 .hero {
   background-color: var(--secondary-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -106,19 +127,31 @@ ul {
   line-height: 1.87;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+
+  display: inline-block;
+  text-align: center;
+
+  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  border: 1px solid transparent;
 }
 
 /* Блоки секции */
 
+.section-advant {
+  padding-top: 96px;
+  padding-bottom: 94px;
+}
+
 .advant-title {
+  margin: 0;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -127,6 +160,8 @@ ul {
 }
 
 .section-text {
+  margin: 0;
+
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -136,12 +171,22 @@ ul {
 /* Наша команда */
 
 .section-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--secondary-command-color);
 }
 
 /* Чем мы занимаемся */
 
+.section {
+  padding-bottom: 94px;
+}
+
 .section-title.desc {
+  margin: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -149,7 +194,14 @@ ul {
   text-align: center;
 }
 
-.section-name {
+.img {
+  margin-bottom: 30px;
+}
+
+.section-title.section-name {
+  margin: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -200,6 +252,9 @@ ul {
 }
 
 .footer-text {
+  margin: 0;
+  padding-bottom: 9px;
+
   color: var(--primary-white-color);
   font-weight: 400;
   font-size: 14px;
@@ -212,16 +267,25 @@ ul {
 /* Фильтры */
 
 .button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  text-align: center;
+  border-color: transparent;
+  min-height: 38px;
+
   color: var(--primary-text-color);
   background-color: var(--secondary-command-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  color: var(--primary-white-color);
+  color: var(--secondary-command-color);
   background-color: var(--accent-color);
 }
 
@@ -232,10 +296,16 @@ ul {
 }
 
 .section-workcin {
-  background-color: var(--secondary-command-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-fon-color);
 }
 
 .section-title {
+  margin: 0;
+  margin-bottom: 4px;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
