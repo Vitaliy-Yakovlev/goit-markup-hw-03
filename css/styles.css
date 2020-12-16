@@ -32,23 +32,28 @@ a {
   text-decoration: none;
 }
 
-ul {
+/* Утилиты */
+
+.ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
-/* Шапка */
-
-/* главная навигация */
 
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
+}
 
-  outline: 2px solid red;
+/* Шапка */
+
+/* главная навигация */
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .link {
@@ -82,6 +87,30 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
 
 .auth-nav .link {
@@ -144,13 +173,25 @@ ul {
 
 /* Блоки секции */
 
+/* Наши приемущества */
+
 .section-advant {
   padding-top: 96px;
   padding-bottom: 94px;
 }
 
+.main-item {
+  display: flex;
+  margin: -15px;
+}
+
+.main-item .item {
+  margin: 15px;
+}
+
 .advant-title {
   margin: 0;
+  margin-bottom: 10px;
 
   color: var(--primary-text-color);
   font-weight: 700;
@@ -159,7 +200,7 @@ ul {
   text-transform: uppercase;
 }
 
-.section-text {
+.section-advant .section-text {
   margin: 0;
 
   color: var(--title-text-color);
@@ -168,19 +209,12 @@ ul {
   line-height: 1.71;
 }
 
-/* Наша команда */
-
-.section-command {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  background-color: var(--secondary-command-color);
-}
-
 /* Чем мы занимаемся */
 
 .section {
   padding-bottom: 94px;
+
+  text-align: center;
 }
 
 .section-title.desc {
@@ -192,6 +226,15 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.link-flex {
+  display: flex;
+  margin: -15px;
+}
+
+.link-flex > li {
+  margin: 15px;
 }
 
 .img {
@@ -209,24 +252,70 @@ ul {
   text-align: center;
 }
 
-.section-work {
+.section-command .section-work {
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
+/* Наша команда */
+
+.section-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  text-align: center;
+  background-color: var(--secondary-command-color);
+}
+
+.command-flex {
+  display: flex;
+  margin: -15px;
+}
+
+.container .flex {
+  margin: 15px;
+  width: 270px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-work {
+  padding-bottom: 30px;
+}
+
 /* Подвал */
 
 .footer {
+  padding: 0;
+
   background-color: var(--secondary-color);
 }
 
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .address {
+  padding: 0;
+  padding-bottom: 60px;
+
   font-style: normal;
 }
 
 .nav-link-logo.footer {
+  margin: 0px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: inline-block;
+
   color: var(--primary-white-color);
   font-family: Raleway;
   font-weight: 700;
@@ -240,10 +329,16 @@ ul {
 }
 
 .footer-link {
+  margin-bottom: 9px;
+
   color: var(--footer-link-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address-link {
+  margin: 0;
 }
 
 .footer-link:hover,
@@ -253,7 +348,7 @@ ul {
 
 .footer-text {
   margin: 0;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 
   color: var(--primary-white-color);
   font-weight: 400;
@@ -288,11 +383,28 @@ ul {
   color: var(--secondary-command-color);
   background-color: var(--accent-color);
 }
+/* Флекс бокс */
+
+.nav-button {
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.nav-button .btn-flex + .btn-flex {
+  display: block;
+  margin-left: 8px;
+}
 
 /* Наши работы  */
 
-.display {
-  display: none;
+.vizually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .section-workcin {
@@ -302,9 +414,10 @@ ul {
   background-color: var(--secondary-fon-color);
 }
 
-.section-title {
+.section-workcin .section-title {
   margin: 0;
   margin-bottom: 4px;
+  margin-left: 24px;
 
   color: var(--primary-text-color);
   font-weight: 700;
@@ -314,14 +427,31 @@ ul {
 }
 
 .section-text {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 24px;
+
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 
-.work {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+/* Пик бокс флекс */
+
+.pic-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -13px;
+}
+.pic-flex {
+  margin: 13px;
+
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.pic {
+  margin-bottom: 30px;
 }
