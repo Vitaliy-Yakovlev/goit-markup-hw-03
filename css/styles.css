@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 a {
@@ -286,11 +286,10 @@ a {
 
 .command-flex {
   display: flex;
-  margin: -15px;
+  justify-content: space-between;
 }
 
 .container .flex {
-  margin: 15px;
   width: 270px;
 
   background-color: var(--primary-white-color);
@@ -303,6 +302,8 @@ a {
 
 .footer {
   padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--secondary-color);
 }
@@ -314,14 +315,14 @@ a {
 
 .address {
   padding: 0;
-  padding-bottom: 60px;
 
   font-style: normal;
 }
 
 .nav-link-logo.footer {
   margin: 0px;
-  padding-top: 60px;
+  padding: 0;
+
   margin-bottom: 20px;
   display: inline-block;
 
