@@ -28,6 +28,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -142,6 +148,12 @@ a {
 }
 
 .hero-title {
+  /* display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 696px; */
+
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -166,12 +178,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
-
-  display: inline-block;
-  text-align: center;
 
   cursor: pointer;
 }
@@ -245,7 +252,7 @@ a {
   margin: -15px;
 }
 
-.link-flex > li {
+.link-flex .item-link {
   margin: 15px;
 }
 
@@ -260,7 +267,7 @@ a {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
 }
 
@@ -445,10 +452,6 @@ a {
 }
 .pic-flex {
   margin: 15px;
-}
-
-.pic {
-  display: block;
 }
 
 .cards {
