@@ -448,10 +448,25 @@ a {
 .pic-box {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: -30px;
+  margin-top: -30px;
+
+  /* margin: -15px; */
 }
+
+.pic-flex:hover,
+.pic-fkex:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .pic-flex {
-  margin: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+
+  /* margin: 15px; */
 }
 
 .cards {
@@ -461,5 +476,5 @@ a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  background: #ffffff;
+  background: var(--primary-white-color);
 }
